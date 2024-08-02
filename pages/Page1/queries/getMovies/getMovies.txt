@@ -1,0 +1,8 @@
+SELECT
+  *
+FROM
+  public.tmdb_movies {{moviesTable.sortOrder.column ? "ORDER BY " + moviesTable.sortOrder.column + "  " + (moviesTable.sortOrder.order !== "desc" ? "" : "DESC") : ""}}
+LIMIT
+  {{moviesTable.pageSize}}
+OFFSET
+  {{moviesTable.pageOffset}}

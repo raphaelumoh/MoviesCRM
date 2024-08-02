@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "66ac7cb7aeda26258c06df36_ba5db9f8-3de6-4767-8b5b-37a0b07770a2",
-  "id": "Page1_movies",
+  "gitSyncId": "66aceda0aeda26258c06df55_9df58e6e-50d8-425b-80dd-0b44c7a08b8a",
+  "id": "Page1_Total_record_public_tmdb_movies1",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM public.\"tmdb_movies\" ORDER BY id ASC LIMIT 20;",
+      "body": "SELECT COUNT(*) from public.tmdb_movies;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,9 +22,13 @@
       "name": "Movies_DB",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
-    "executeOnLoad": false,
-    "name": "movies",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "executeOnLoad": true,
+    "name": "Total_record_public_tmdb_movies1",
     "pageId": "Page1",
     "userSetOnLoad": false
   }
