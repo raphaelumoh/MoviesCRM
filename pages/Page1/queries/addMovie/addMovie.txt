@@ -1,0 +1,13 @@
+INSERT INTO public.tmdb_movies
+( id, title,vote_average, vote_count,status, release_date, revenue, adult, genres ) 
+VALUES (
+	CAST({{ idInput.text }} AS INTEGER),
+       {{  titleInput.text }},
+	CAST({{voteAvgInput.text }} AS INTEGER),
+	CAST({{voteCountinput.text }} AS INTEGER),
+		   {{statusInput.text}},
+	     {{releaseDatePicker.formattedDate }},
+	CAST({{revenueInput.text }} AS INTEGER),
+	{{ adultCheckBox.isChecked }},
+	{{genreInput.text}}
+);
