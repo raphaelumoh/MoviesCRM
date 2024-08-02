@@ -1,6 +1,6 @@
 {
   "gitSyncId": "66aceda0aeda26258c06df55_9df58e6e-50d8-425b-80dd-0b44c7a08b8a",
-  "id": "Page1_Total_record_public_tmdb_movies1",
+  "id": "Home_Total_record_public_tmdb_movies1",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -29,7 +29,7 @@
     ],
     "executeOnLoad": true,
     "name": "Total_record_public_tmdb_movies1",
-    "pageId": "Page1",
+    "pageId": "Home",
     "userSetOnLoad": false
   }
 }

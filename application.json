@@ -16,7 +16,7 @@
   "icon": "steam-bowl",
   "pages": [
     {
-      "id": "Page1",
+      "id": "Home",
       "isDefault": true
     }
   ],
