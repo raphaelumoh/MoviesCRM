@@ -1,0 +1,1 @@
+SELECT * FROM public."tmdb_movies" LIMIT 10;
