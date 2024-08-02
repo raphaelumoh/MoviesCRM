@@ -1,0 +1,9 @@
+SELECT * FROM public.tmdb_movies
+WHERE 
+    (title LIKE '% {{ moviesTable.searchText }} %'
+    OR status LIKE '% {{ moviesTable.searchText }} %'
+    OR CAST(release_date AS TEXT) LIKE '% {{ moviesTable.searchText }} %'
+    OR CAST(revenue AS TEXT) LIKE '% {{ moviesTable.searchText }} %'
+    OR genres LIKE '% {{ moviesTable.searchText }} %')
+
+ORDER BY id LIMIT 10

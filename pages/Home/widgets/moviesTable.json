@@ -194,6 +194,9 @@
     },
     {
       "key": "primaryColumns.EditActions1.onSave"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
   "enableClientSideSearch": true,
@@ -229,6 +232,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onPageChange": "{{getMovies.run()\nTotal_record_public_tmdb_movies1.run();}}",
+  "onSearchTextChanged": "{{fetchMovies.run()}}",
   "onSort": "{{\n            getMovies.run();\n            Total_record_public_tmdb_movies1.run()\n          }}",
   "originalBottomRow": 85,
   "originalTopRow": 16,
