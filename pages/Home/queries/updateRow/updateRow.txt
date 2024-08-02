@@ -1,0 +1,11 @@
+UPDATE public.tmdb_movies SET 
+  id = {{moviesTable.updatedRow.id}},
+  title = {{moviesTable.updatedRow.title}},
+	vote_average = {{ moviesTable.updatedRow.vote_average }},
+	vote_count = {{ moviesTable.updatedRow.vote_count }},
+	status = {{ moviesTable.updatedRow.status}},
+	release_date = {{moviesTable.updatedRow.release_date}},
+	revenue = {{ moviesTable.updatedRow.revenue }},
+	adult = {{ moviesTable.updatedRow.adult }},
+	genres = {{ moviesTable.updatedRow.genres }}
+  WHERE id = {{ moviesTable.updatedRow.id }};

@@ -1,6 +1,6 @@
 {
   "gitSyncId": "66aceda0aeda26258c06df55_c863663f-db46-4a65-a201-01108337daf3",
-  "id": "Page1_getMovies",
+  "id": "Home_getMovies",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -29,7 +29,7 @@
     ],
     "executeOnLoad": true,
     "name": "getMovies",
-    "pageId": "Page1",
+    "pageId": "Home",
     "userSetOnLoad": false
   }
 }

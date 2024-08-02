@@ -1,9 +1,9 @@
 {
   "gitSyncId": "66acf5ddaeda26258c06df5e_e6647443-128c-456c-9515-dec156f42a4c",
-  "id": "Page1_insertData",
+  "id": "Home_insertData",
   "unpublishedCollection": {
     "name": "insertData",
-    "pageId": "Page1",
+    "pageId": "Home",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "variables": []

@@ -58,7 +58,7 @@
     "keywords",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1722618356091,
+  "columnUpdatedAt": 1722627827863,
   "columnWidthMap": {},
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": 0,
@@ -191,6 +191,9 @@
     },
     {
       "key": "onAddNewRowSave"
+    },
+    {
+      "key": "primaryColumns.EditActions1.onSave"
     }
   ],
   "enableClientSideSearch": true,
@@ -261,9 +264,10 @@
       "isEditable": false,
       "isSaveDisabled": "{{moviesTable.processedTableData.map((currentRow, currentIndex) => ( !moviesTable.updatedRowIndices.includes(currentIndex)))}}",
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "Save / Discard",
       "notation": "standard",
+      "onSave": "{{updateRow.run().then(() => {\n  getMovies.run();\n});}}",
       "originalId": "EditActions1",
       "saveActionLabel": "Save",
       "saveBorderRadius": "{{moviesTable.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
