@@ -1,12 +1,11 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
   "animateLoading": true,
-  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 60,
-  "boxShadow": "none",
-  "defaultText": "",
-  "displayName": "Input",
+  "bottomRow": 71,
+  "defaultCheckedState": true,
+  "displayName": "Checkbox",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,32 +14,26 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "hideCard": false,
-  "iconAlign": "left",
-  "iconSVG": "/static/media/icon.e082ea210dbe0f5ca1bf7bfd67abdbec.svg",
-  "inputType": "TEXT",
+  "iconSVG": "/static/media/icon.57df02ed5f94295f286d31eb27a0bb9f.svg",
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "pvydz9gkae",
-  "label": "Genre",
-  "labelAlignment": "left",
-  "labelPosition": "Top",
-  "labelStyle": "",
-  "labelTextSize": "0.875rem",
-  "labelWidth": 5,
+  "key": "s42flss9iw",
+  "label": "Delisted\n",
+  "labelPosition": "Left",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 45,
+  "mobileBottomRow": 71,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 16,
-  "mobileTopRow": 38,
+  "mobileRightColumn": 9,
+  "mobileTopRow": 67,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -49,30 +42,24 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 60,
-  "originalTopRow": 53,
-  "parentColumnSpace": 8.0625,
+  "originalBottomRow": 71,
+  "originalTopRow": 67,
+  "parentColumnSpace": 9.5,
   "parentId": "hcwlm2j20q",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 61,
+  "rightColumn": 18,
   "searchTags": [
-    "form",
-    "text input",
-    "number",
-    "textarea"
+    "boolean"
   ],
-  "showStepArrows": false,
   "tags": [
-    "Suggested",
-    "Inputs"
+    "Toggles"
   ],
-  "thumbnailSVG": "/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
-  "topRow": 53,
-  "type": "INPUT_WIDGET_V2",
-  "version": 2,
-  "widgetId": "xbn1gcp1r7",
-  "widgetName": "genreInput"
+  "thumbnailSVG": "/static/media/thumbnail.aa4d27836e27bb6c4c45db14dee8f2b2.svg",
+  "topRow": 67,
+  "type": "CHECKBOX_WIDGET",
+  "version": 1,
+  "widgetId": "fwqkz6fv0n",
+  "widgetName": "delistedCheckBox"
 }

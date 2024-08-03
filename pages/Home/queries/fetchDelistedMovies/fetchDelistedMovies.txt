@@ -1,0 +1,1 @@
+SELECT * FROM public."tmdb_movies" WHERE delisted=TRUE LIMIT 10;

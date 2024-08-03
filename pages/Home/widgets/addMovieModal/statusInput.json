@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 50,
+  "bottomRow": 49,
   "boxShadow": "none",
   "defaultText": "",
   "displayName": "Input",
@@ -49,8 +49,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 53,
-  "originalTopRow": 46,
+  "originalBottomRow": 49,
+  "originalTopRow": 42,
   "parentColumnSpace": 8.0625,
   "parentId": "hcwlm2j20q",
   "parentRowSpace": 10,
@@ -70,7 +70,7 @@
     "Inputs"
   ],
   "thumbnailSVG": "/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
-  "topRow": 43,
+  "topRow": 42,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "brvswc620t",

@@ -1,0 +1,3 @@
+UPDATE public.tmdb_movies
+SET delisted = TRUE
+WHERE distribution_license_expiration < CURRENT_DATE;

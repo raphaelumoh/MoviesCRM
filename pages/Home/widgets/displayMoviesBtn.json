@@ -27,13 +27,13 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "spgfe6dxub",
-  "leftColumn": 48,
+  "key": "o1lhgbhijj",
+  "leftColumn": 16,
   "minWidth": 120,
-  "mobileBottomRow": 16,
-  "mobileLeftColumn": 10,
-  "mobileRightColumn": 26,
-  "mobileTopRow": 12,
+  "mobileBottomRow": 25,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 14,
+  "mobileTopRow": 21,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -42,10 +42,10 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{showModal(addMovieModal.name).then(() => {\n  showAlert('Movie created successfully', 'success');\n}).catch(() => {\n  showAlert('Failed to create a movie', 'error');\n});}}",
+  "onClick": "{{getMovies.run().then(() => {\n  showAlert('Movies fetched Successfully', 'success');\n}).catch(() => {\n  showAlert('Failed to fetch movies', '');\n});}}",
   "originalBottomRow": 15,
   "originalTopRow": 11,
-  "parentColumnSpace": 12.484375,
+  "parentColumnSpace": 14.40625,
   "parentId": "0",
   "parentRowSpace": 10,
   "placement": "CENTER",
@@ -53,7 +53,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 62,
+  "rightColumn": 30,
   "searchTags": [
     "click",
     "submit"
@@ -61,12 +61,11 @@
   "tags": [
     "Buttons"
   ],
-  "text": "Add New Movie",
+  "text": "Display All Movies",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "tooltip": "Create new movie",
   "topRow": 11,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "pei88fi66v",
-  "widgetName": "addNewMovieBtn"
+  "widgetId": "zoud52pqju",
+  "widgetName": "displayMoviesBtn"
 }
