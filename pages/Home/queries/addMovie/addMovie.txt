@@ -1,5 +1,5 @@
 INSERT INTO public.tmdb_movies
-( id, title,vote_average, vote_count,status, release_date, revenue, adult, genres ) 
+( id, title,vote_average, vote_count,status, release_date, revenue, adult, genres, distribution_license_expiration, delisted ) 
 VALUES (
 	CAST({{ idInput.text }} AS INTEGER),
        {{  titleInput.text }},
@@ -9,5 +9,7 @@ VALUES (
 	     {{releaseDatePicker.formattedDate }},
 	CAST({{revenueInput.text }} AS INTEGER),
 	{{ adultCheckBox.isChecked }},
-	{{genreInput.text}}
+	{{genreInput.text}},
+	{{distributionLicenseExpPicker.formattedDate }},
+	{{ delistedCheckBox.isChecked }}
 );

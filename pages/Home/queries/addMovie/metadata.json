@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.tmdb_movies\n( id, title,vote_average, vote_count,status, release_date, revenue, adult, genres ) \nVALUES (\n\tCAST({{ idInput.text }} AS INTEGER),\n       {{  titleInput.text }},\n\tCAST({{voteAvgInput.text }} AS INTEGER),\n\tCAST({{voteCountinput.text }} AS INTEGER),\n\t\t   {{statusInput.text}},\n\t     {{releaseDatePicker.formattedDate }},\n\tCAST({{revenueInput.text }} AS INTEGER),\n\t{{ adultCheckBox.isChecked }},\n\t{{genreInput.text}}\n);\n",
+      "body": "INSERT INTO public.tmdb_movies\n( id, title,vote_average, vote_count,status, release_date, revenue, adult, genres, distribution_license_expiration, delisted ) \nVALUES (\n\tCAST({{ idInput.text }} AS INTEGER),\n       {{  titleInput.text }},\n\tCAST({{voteAvgInput.text }} AS INTEGER),\n\tCAST({{voteCountinput.text }} AS INTEGER),\n\t\t   {{statusInput.text}},\n\t     {{releaseDatePicker.formattedDate }},\n\tCAST({{revenueInput.text }} AS INTEGER),\n\t{{ adultCheckBox.isChecked }},\n\t{{genreInput.text}},\n\t{{distributionLicenseExpPicker.formattedDate }},\n\t{{ delistedCheckBox.isChecked }}\n);\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
